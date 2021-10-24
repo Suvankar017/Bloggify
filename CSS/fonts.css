@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Lato-Light;
+    src: url("../Assets/Fonts/Lato/Lato-Light.ttf");
+}
+
+@font-face {
+    font-family: Fontdiner-Swanky;
+    src: url("../Assets/Fonts/Fontdiner-Swanky/FontdinerSwanky-Regular.ttf");
+}
+
+@font-face {
+    font-family: Geo;
+    src: url("../Assets/Fonts/Geo/Geo-Regular.ttf");
+}
+
+@font-face {
+    font-family: Fira-Code;
+    src: url("../Assets/Fonts/Fira-Code/FiraCode-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: Fredericka-The-Great;
+    src: url("../Assets/Fonts/Fredericka-The-Great/FrederickatheGreat-Regular.ttf");
+}
