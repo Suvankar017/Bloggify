@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/app.js"></script>
     <link rel="stylesheet" href="CSS/all.css">
     <link rel="stylesheet" href="CSS/style.css">
     <title>Bloggify | Blog Website</title>
@@ -17,7 +18,7 @@
                 <h1>BLOGGIFY</h1>
                 <ul class="right-menu">
                     <li><i class="fas fa-share-alt"></i></li>
-                    <li><i class="fas fa-user-alt"></i></li>
+                    <li id="profile-btn"><i class="fas fa-user-alt"></i></li>
                 </ul>
             </nav>
 
@@ -35,6 +36,33 @@
                 <span></span>
                 <span></span>
             </footer>
+        </div>
+
+        <!-- Profile -->
+        <div class="profile show-profile">
+            <div class="profile-container">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="profile-info">
+                    <span><i class="fas fa-user-alt"></i></span>
+                    <h1>Mary Scarlet</h1>
+                    <h6>23-March, 2001</h6>
+                </div>
+                <hr>
+                <ul class="options">
+                    <li class="option-item">
+                        <div class="icon"><i class="fas fa-user-alt"></i></div>
+                        <h4>EDIT</h4>
+                    </li>
+                    <li class="option-item">
+                        <div class="icon"><i class="fas fa-user-alt"></i></div>
+                        <h4>CONTACT US</h4>
+                    </li>
+                    <li class="option-item">
+                        <div class="icon"><i class="fas fa-user-alt"></i></div>
+                        <h4>LOGOUT</h4>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -117,16 +145,16 @@
         <div class="container">
             <ul class="social-icons">
                 <li><a href="#">
-                    <i class="fas fa-user-alt"></i>
+                    <i class="fab fa-facebook-f"></i>
                 </a></li>
                 <li><a href="#">
-                    <i class="fas fa-user-alt"></i>
+                    <i class="fab fa-twitter"></i>
                 </a></li>
                 <li><a href="#">
-                    <i class="fas fa-user-alt"></i>
+                    <i class="fab fa-instagram"></i>
                 </a></li>
             </ul>
-            <h3>Copyright &copy; 2020</h3>
+            <h3>@powered by BLOGGIFY</h3>
         </div>
     </footer>
 </body>

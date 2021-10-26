@@ -31,6 +31,7 @@ ul{
 .main{
     height: 100vh;
     background: #f4f4f4 url("../Assets/Images/ShowcaseBG.jpg") no-repeat center center/cover;
+    position: relative;
 }
 
 .main .container{
@@ -148,6 +149,112 @@ ul{
         opacity: 0;
         transform: rotate(45deg) translate(5px, 5px);
     }
+}
+
+/* Profile */
+.profile{
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    background: rgba(128, 128, 128, .2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    font-family: Fira-Code;
+}
+
+.show-profile{
+    display: none;
+}
+
+.profile-container{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile .close-btn{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid #fff;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.profile .close-btn:hover{
+    background: tomato;
+}
+
+.profile .profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile .profile-info span{
+    margin: 30px 0 20px;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 80px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.profile .profile-info h1{
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.profile .profile-info h6{
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.profile .options{
+    margin: 20px 0;
+    list-style: none;
+}
+
+.profile .options .option-item{
+    margin-bottom: 20px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /*border: 1px solid #fff;*/
+}
+
+.profile .options .option-item .icon{
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.profile .options .option-item h4{
+    font-weight: lighter;
+    font-size: 1.1rem;
+    letter-spacing: .06em;
+}
+
+.profile .options .option-item:hover{
+    background: rgba(0, 0, 0, .2);
+    cursor: pointer;
 }
 
 /* About */
