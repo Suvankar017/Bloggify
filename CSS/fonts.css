@@ -22,3 +22,8 @@
     font-family: Fredericka-The-Great;
     src: url("../Assets/Fonts/Fredericka-The-Great/FrederickatheGreat-Regular.ttf");
 }
+
+@font-face {
+    font-family: Bebas-Neue;
+    src: url("../Assets/Fonts/Bebas-Neue/BebasNeue-Regular.ttf");
+}

@@ -4,138 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/app.js"></script>
     <link rel="stylesheet" href="CSS/all.css">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Bloggify | Blog Website</title>
+    <title>Bloggify | Homepage</title>
 </head>
 <body>
+    
     <!-- Main -->
     <section class="main">
         <div class="container">
+
             <!-- Nav -->
             <nav class="main-nav">
                 <h1>BLOGGIFY</h1>
                 <ul class="right-menu">
-                    <li><i class="fas fa-share-alt"></i></li>
-                    <li id="profile-btn"><i class="fas fa-user-alt"></i></li>
+                    <li class="login"><a href="#">Login</a></li>
+                    <li class="signup"><a href="#">Signup</a></li>
                 </ul>
             </nav>
 
             <!-- Showcase -->
             <header class="showcase">
                 <div class="title">
-                    <h1>Mary Scarlet</h1>
-                    <p>"The world is a book and those who do not travel read only one page."</p>
+                    <h1>BLOGGIFY</h1>
                 </div>
             </header>
 
-            <!-- Footer -->
-            <footer>
-                <span></span>
-                <span></span>
-                <span></span>
-            </footer>
-        </div>
-
-        <!-- Profile -->
-        <div class="profile show-profile">
-            <div class="profile-container">
-                <div class="close-btn"><i class="fas fa-times"></i></div>
-                <div class="profile-info">
-                    <span><i class="fas fa-user-alt"></i></span>
-                    <h1>Mary Scarlet</h1>
-                    <h6>23-March, 2001</h6>
-                </div>
-                <hr>
-                <ul class="options">
-                    <li class="option-item">
-                        <div class="icon"><i class="fas fa-user-alt"></i></div>
-                        <h4>EDIT</h4>
-                    </li>
-                    <li class="option-item">
-                        <div class="icon"><i class="fas fa-user-alt"></i></div>
-                        <h4>CONTACT US</h4>
-                    </li>
-                    <li class="option-item">
-                        <div class="icon"><i class="fas fa-user-alt"></i></div>
-                        <h4>LOGOUT</h4>
-                    </li>
-                </ul>
-            </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section class="about">
+    <!-- Top Blogs -->
+    <section class="top-blogs">
         <div class="container">
-            <div class="info">
-                <h1>About</h1>
-                <h2>Hi</h2>
-                <p>My name is Scarlet, and I’m a gameplay programmer. My job is to come up with some interesting gameplay while plug-and-playing all the systems. I’ve worked on a wide variety of projects with Naughty Dog as a freelancer. And I’m here to share some knowledge that I’ve gained from these projects.</p>
-            </div>
-        </div>
-    </section>
+            <h1>Recent Blogs</h1>
+            <div class="card-holder">
 
-    <!-- Blogs -->
-    <section class="blogs">
-        <div class="container">
-            <h1>Blogs</h1>
-            <div class="blog-cards">
-                <div class="card c-h">
-                    <img src="./Assets/Images/Blogs/Blog-1.jpg" alt="Blog 1">
-                    <div class="card-info">
-                        <h3>Lone Lion</h3>
+                <!-- Card 1 -->
+                <div class="blog-card">
+                    <div class="meta">
+                        <img src="./Assets/Images/Blogs/Blog-1.jpg" alt="Blog 1" class="photo">
+                        <ul class="details">
+                            <li class="author">
+                                <i class="fas fa-user-alt"></i>
+                                <a href="#">Author Name</a>
+                            </li>
+                            <li class="date">
+                                <i class="far fa-calendar"></i>
+                                29 Oct, 2021
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="description">
+                        <h1>Blog Heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, possimus incidunt! Et, obcaecati. Labore voluptatum sit sed vel inventore commodi!</p>
+                        <p class="read-more">
+                            <a href="#">
+                                Read More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="./Assets/Images/Blogs/Blog-2.jpg" alt="Blog 2">
-                    <div class="card-info">
-                        <h3>Greeny Forest</h3>
+
+                <!-- Card 2 -->
+                <div class="blog-card alt">
+                    <div class="meta">
+                        <img src="./Assets/Images/Blogs/Blog-2.jpg" alt="Blog 2" class="photo">
+                        <ul class="details">
+                            <li class="author">
+                                <i class="fas fa-user-alt"></i>
+                                <a href="#">Author Name</a>
+                            </li>
+                            <li class="date">
+                                <i class="far fa-calendar"></i>
+                                29 Oct, 2021
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="description">
+                        <h1>Blog Heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia assumenda ipsam quaerat alias exercitationem minima voluptatum itaque a voluptatibus adipisci nulla saepe, eos ex veritatis, dicta, autem enim? Illum eaque quos atque commodi iure modi, in delectus rerum! Maiores soluta quod nisi odio sequi omnis officia dolor iste mollitia et. Ullam laborum ratione hic delectus eligendi labore atque totam natus?</p>
+                        <p class="read-more">
+                            <a href="#">
+                                Read More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="./Assets/Images/Blogs/Blog-3.jpg" alt="Blog 3">
-                    <div class="card-info">
-                        <h3>Horn Deer</h3>
+
+                <!-- Card 3 -->
+                <div class="blog-card">
+                    <div class="meta">
+                        <img src="./Assets/Images/Blogs/Blog-3.jpg" alt="Blog 3" class="photo">
+                        <ul class="details">
+                            <li class="author">
+                                <i class="fas fa-user-alt"></i>
+                                <a href="#">Author Name</a>
+                            </li>
+                            <li class="date">
+                                <i class="far fa-calendar"></i>
+                                29 Oct, 2021
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="description">
+                        <h1>Blog Heading</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ut velit iure hic soluta consequuntur temporibus quibusdam illo quae.</p>
+                        <p class="read-more">
+                            <a href="#">
+                                Read More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="card c-h">
-                    <img src="./Assets/Images/Blogs/Blog-4.jpg" alt="Blog 4">
-                    <div class="card-info">
-                        <h3>Red Bird</h3>
+
+                <!-- Card 4 -->
+                <div class="blog-card alt">
+                    <div class="meta">
+                        <img src="./Assets/Images/Blogs/Blog-4.jpg" alt="Blog 4" class="photo">
+                        <ul class="details">
+                            <li class="author">
+                                <i class="fas fa-user-alt"></i>
+                                <a href="#">Author Name</a>
+                            </li>
+                            <li class="date">
+                                <i class="far fa-calendar"></i>
+                                29 Oct, 2021
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="description">
+                        <h1>Blog Heading</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium excepturi, ipsam sapiente voluptatum eius, corrupti natus perferendis iure voluptatem cum debitis sit dolor? Vel recusandae vero minus quas dignissimos deserunt natus ipsum. Odio ullam, non similique, expedita ratione fugiat et voluptatem sint vero exercitationem commodi quia veritatis repellendus magni labore aut, mollitia dolorem natus nihil suscipit. Ea libero, corporis iusto blanditiis repellat eaque? Quam deserunt, aliquid sit nemo soluta, maiores magni, voluptates laudantium corrupti mollitia molestiae at velit. Ad mollitia praesentium obcaecati at sequi optio nihil vel laudantium dolore. Sint voluptate nihil quia quo, quis perferendis. Asperiores molestias natus doloremque!</p>
+                        <p class="read-more">
+                            <a href="#">
+                                Read More
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </p>
                     </div>
                 </div>
-                <div class="card c-v">
-                    <img src="./Assets/Images/Blogs/Blog-5.jpg" alt="Blog 5">
-                    <div class="card-info">
-                        <h3>Leaf Road</h3>
-                    </div>
-                </div>
-                <div class="card c-h">
-                    <img src="./Assets/Images/Blogs/Blog-6.jpg" alt="Blog 6">
-                    <div class="card-info">
-                        <h3>Love Bird</h3>
-                    </div>
-                </div>
-                <div class="card c-h">
-                    <img src="./Assets/Images/Blogs/Blog-7.jpg" alt="Blog 7">
-                    <div class="card-info">
-                        <h3>Black Elephant</h3>
-                    </div>
-                </div>
-                <div class="card c-h">
-                    <img src="./Assets/Images/Blogs/Blog-8.jpg" alt="Blog 8">
-                    <div class="card-info">
-                        <h3>Wooden Bridge</h3>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./Assets/Images/Blogs/Blog-9.jpg" alt="Blog 9">
-                    <div class="card-info">
-                        <h3>Red Chimni</h3>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -154,8 +169,10 @@
                     <i class="fab fa-instagram"></i>
                 </a></li>
             </ul>
-            <h3>@powered by BLOGGIFY</h3>
+            <h3>Copyright &copy;, 2021</h3>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
