@@ -32,6 +32,7 @@ ul{
     height: 100vh;
     background: #f4f4f4 url("../Assets/Images/ShowcaseBG.jpg") no-repeat center center/cover;
     position: relative;
+    overflow: hidden;
 }
 
 .main .container{
@@ -153,6 +154,7 @@ ul{
 
 /* Profile */
 .profile{
+    display: none;
     top: 0;
     right: 0;
     width: 400px;
@@ -165,7 +167,18 @@ ul{
 }
 
 .show-profile{
-    display: none;
+    display: block;
+    animation-name: animate-profile-IN;
+    animation-duration: .4s;
+}
+
+@keyframes animate-profile-IN{
+    from {
+        right: -400px;
+    }
+    to {
+        right: 0;
+    }
 }
 
 .profile-container{
@@ -259,7 +272,7 @@ ul{
 
 /* About */
 .about{
-    background: rgb(236, 193, 224) url("../Assets/Images/Pattern.png") repeat fixed center center;
+    background: rgb(247, 235, 243) url("../Assets/Images/Pattern.png") repeat fixed center center;
     background-blend-mode: soft-light;
 }
 
@@ -319,7 +332,7 @@ ul{
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .card img{
@@ -341,6 +354,11 @@ ul{
     flex-direction: column;
     background: rgba(0, 0, 0, .3);
     backdrop-filter: blur(3px);
+}
+
+.card .card-info a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .card .card-info h3{
@@ -439,6 +457,90 @@ ul{
     text-align: center;
 }
 
+/* Utils */
+.modal-window{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.modal-window .modal-content{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: 640px;
+    min-height: 50px;
+    box-shadow: 5px 7px 20px rgba(0, 0, 0, .5);
+    text-align: center;
+}
+
+.modal-content p{
+    font-size: 1.3rem;
+}
+
+.modal-content .modal-header{
+    padding: 2px 16px;
+    background: #5cb85c;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-header .close{
+    margin-right: -10px;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content .close:hover, .modal-content .close:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content .modal-body{
+    padding: 10px 16px;
+    min-height: 50px;
+}
+
+.modal-content .modal-footer{
+    padding: 2px 16px;
+    background: #5cb85c;
+    color: #fff;
+}
+
+.modal-window.show{
+    display: block;
+}
+
+.modal-window.show .modal-content{
+    animation-name: animate-modal-window;
+    animation-duration: .4s;
+}
+
+@keyframes animate-modal-window {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
 /* Responsive media query */
 @media only screen and (max-width:900px) {
     .blogs .blog-cards{
@@ -456,6 +558,14 @@ ul{
 }
 
 @media only screen and (max-width:550px) {
+    .profile{
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+
     .blogs .blog-cards{
         gap: 10px;
         grid-template-columns: 1fr;

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/user.js"></script>
     <link rel="stylesheet" href="CSS/all.css">
     <link rel="stylesheet" href="CSS/user.css">
     <title>Blogger | Author Webpage</title>
@@ -17,7 +16,7 @@
             <nav class="main-nav">
                 <h1>BLOGGIFY</h1>
                 <ul class="right-menu">
-                    <li><i class="fas fa-share-alt"></i></li>
+                    <li id="share-btn"><i class="fas fa-share-alt"></i></li>
                     <li id="profile-btn"><i class="fas fa-user-alt"></i></li>
                 </ul>
             </nav>
@@ -39,7 +38,7 @@
         </div>
 
         <!-- Profile -->
-        <div class="profile show-profile">
+        <div class="profile">
             <div class="profile-container">
                 <div class="close-btn"><i class="fas fa-times"></i></div>
                 <div class="profile-info">
@@ -50,15 +49,15 @@
                 <hr>
                 <ul class="options">
                     <li class="option-item">
-                        <div class="icon"><i class="fas fa-user-alt"></i></div>
+                        <div class="icon"><i class="fas fa-edit"></i></div>
                         <h4>EDIT</h4>
                     </li>
                     <li class="option-item">
-                        <div class="icon"><i class="fas fa-user-alt"></i></div>
+                        <div class="icon"><i class="fas fa-people-arrows"></i></div>
                         <h4>CONTACT US</h4>
                     </li>
                     <li class="option-item">
-                        <div class="icon"><i class="fas fa-user-alt"></i></div>
+                        <div class="icon"><i class="fa fa-sign-out-alt"></i></div>
                         <h4>LOGOUT</h4>
                     </li>
                 </ul>
@@ -85,55 +84,73 @@
                 <div class="card c-h">
                     <img src="./Assets/Images/Blogs/Blog-1.jpg" alt="Blog 1">
                     <div class="card-info">
-                        <h3>Lone Lion</h3>
+                        <a href="blog.html">
+                            <h3>Lone Lion</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="./Assets/Images/Blogs/Blog-2.jpg" alt="Blog 2">
                     <div class="card-info">
-                        <h3>Greeny Forest</h3>
+                        <a href="#">
+                            <h3>Greeny Forest</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="./Assets/Images/Blogs/Blog-3.jpg" alt="Blog 3">
                     <div class="card-info">
-                        <h3>Horn Deer</h3>
+                        <a href="#">
+                            <h3>Horn Deer</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="card c-h">
                     <img src="./Assets/Images/Blogs/Blog-4.jpg" alt="Blog 4">
                     <div class="card-info">
-                        <h3>Red Bird</h3>
+                        <a href="#">
+                            <h3>Red Bird</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="card c-v">
                     <img src="./Assets/Images/Blogs/Blog-5.jpg" alt="Blog 5">
                     <div class="card-info">
-                        <h3>Leaf Road</h3>
+                        <a href="#">
+                            <h3>Leaf Road</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="card c-h">
                     <img src="./Assets/Images/Blogs/Blog-6.jpg" alt="Blog 6">
                     <div class="card-info">
-                        <h3>Love Bird</h3>
+                        <a href="#">
+                            <h3>Love Bird</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="card c-h">
                     <img src="./Assets/Images/Blogs/Blog-7.jpg" alt="Blog 7">
                     <div class="card-info">
-                        <h3>Black Elephant</h3>
+                        <a href="#">
+                            <h3>Black Elephant</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="card c-h">
                     <img src="./Assets/Images/Blogs/Blog-8.jpg" alt="Blog 8">
                     <div class="card-info">
-                        <h3>Wooden Bridge</h3>
+                        <a href="#">
+                            <h3>Wooden Bridge</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="card">
                     <img src="./Assets/Images/Blogs/Blog-9.jpg" alt="Blog 9">
                     <div class="card-info">
-                        <h3>Red Chimni</h3>
+                        <a href="#">
+                            <h3>Red Chimni</h3>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -157,5 +174,24 @@
             <h3>@powered by BLOGGIFY</h3>
         </div>
     </footer>
+
+    <!-- Utils -->
+    <div id="modal-window" class="modal-window">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2></h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the body...</p>
+            </div>
+            <div class="modal-footer">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/user.js"></script>
+
 </body>
 </html>
