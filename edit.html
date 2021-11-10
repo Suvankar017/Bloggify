@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/edit.css">
+    <title>Edit Blog | Bloggify</title>
+</head>
+<body>
+    
+    <!-- Main -->
+    <section class="main">
+        <img src="./Assets/Images/Blogs/Blog-1.jpg" alt="Showcase Background">
+        <div class="container">
+
+            <!-- Nav -->
+            <nav class="main-nav">
+                <a href="index.html"><h1>BLOGGIFY</h1></a>
+                <ul class="right-menu">
+                    <li>
+                        <a href="user.html">
+                            <!-- <i class="fas fa-user-alt"></i> -->
+                            
+                            <img class="profile-img" src="./Assets/Images/Icons/AvatarIcon.png" alt="User Profile Image">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Showcase -->
+            <header class="showcase">
+                <div class="title">
+                    <h1>New Blog</h1>
+                    <p>Some text... If necessary.</p>
+                </div>
+            </header>
+
+        </div>
+    </section>
+
+    <!-- Profile Editor -->
+    <section class="editor profile-editor">
+        <div class="container">
+
+            <form action="">
+                <div class="item">
+                    <h1>Name</h1>
+                    <input type="text" name="" required>
+                </div>
+                <div class="item">
+                    <h1>Quote</h1>
+                    <input type="text" name="">
+                </div>
+
+                <div class="item">
+                    <h1>About</h1>
+                    <textarea class="ckeditor" name="" id="editor1" cols="30" rows="10">
+                        Write about you...
+                    </textarea>
+                </div>
+
+                <div class="item">
+                    <input type="submit" value="Save">
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Blog Editor -->
+    <section class="editor profile-editor">
+        <div class="container">
+
+            <form action="">
+                <div class="item">
+                    <h1>Blog Name</h1>
+                    <input type="text" name="" required>
+                </div>
+                <div class="item">
+                    <h1>Blog Summary</h1>
+                    <input type="text" name="" required>
+                </div>
+
+                <div class="item">
+                    <h1>Blog</h1>
+                    <textarea class="ckeditor" name="" id="editor1" cols="30" rows="10">
+                        Write about you...
+                    </textarea>
+                </div>
+
+                <div class="item">
+                    <input type="submit" value="Create">
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="//cdn.ckeditor.com/4.16.2/full/ckeditor.js" type="text/javascript"></script>
+</body>
+</html>

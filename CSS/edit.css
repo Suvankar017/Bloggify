@@ -1,0 +1,189 @@
+@import url("../CSS/fonts.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Lato-Light, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+.container{
+    margin: auto;
+    width: 90%;
+    height: 100%;
+    max-width: 1100px;
+}
+
+/* Main */
+.main{
+    height: 70vh;
+    color: #fff;
+    position: relative;
+    background-color: rgba(0, 0, 0, .2);
+    background-blend-mode: overlay;
+    box-shadow: inset 20px 20px 50px rgba(0, 0, 0, .7), inset -10px -10px 50px rgba(0, 0, 0, .7);
+}
+
+.main img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Main -> Nav */
+.main .main-nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.main-nav a{
+    color: #fff;
+}
+
+.main-nav .right-menu{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav .right-menu li{
+    margin: 0 5px;
+}
+
+.main-nav .right-menu li a{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-nav .right-menu li a:hover{
+    border-radius: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.main-nav .right-menu .profile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Main -> Showcase */
+.showcase{
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase .title{
+    padding: 30px 50px;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.showcase .title h1{
+    font-size: 3rem;
+    font-family: Bebas-Neue;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.showcase .title p{
+    margin-top: 5px;
+    font-size: 1rem;
+    font-family: monospace;
+    font-weight: lighter;
+}
+
+/* Editor */
+.editor{
+    background: rgb(255, 231, 248) url("../Assets/Images/Pattern.png") repeat fixed center center;
+    background-blend-mode: soft-light;
+}
+
+.editor form{
+    padding: 30px 0;
+}
+
+.editor form .item{
+    margin: 20px 0;
+}
+
+.editor form .item h1{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: Fira-Code;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+.editor form input{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.editor form input:focus{
+    border: 1px solid #555;
+    outline: none;
+}
+
+.editor form input[type=submit]{
+    width: auto;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: Fira-Code;
+    letter-spacing: 1px;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    transition: all .5s;
+    border-radius: 5px;
+}
+
+.editor form input[type=submit]:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.hide{
+    display: none;
+}

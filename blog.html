@@ -20,7 +20,21 @@
                 <a href="index.html"><h1>BLOGGIFY</h1></a>
                 <ul class="right-menu">
                     <li>
-                        <a href="user.html"><i class="fas fa-user-alt"></i></a>
+                        <a href="#">
+                            <i class="far fa-edit"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="far fa-trash-alt"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html">
+                            <!-- <i class="fas fa-user-alt"></i> -->
+                            
+                            <img class="profile-img" src="./Assets/Images/Icons/AvatarIcon.png" alt="User Profile Image">
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -29,6 +43,10 @@
             <header class="showcase">
                 <div class="title">
                     <h1>Heading of these blog</h1>
+                    <h4>
+                        <i class="fas fa-user-alt"></i>
+                        User Name
+                    </h4>
                     <h4>
                         <i class="far fa-calendar"></i>
                         30 Oct, 2021
@@ -52,6 +70,50 @@
             
             <!-- Blog Code Here... -->
 
+        </div>
+    </section>
+
+    <!-- Comments Area -->
+    <section class="comment-area">
+        <div class="container">
+
+            <!-- Comment Boxes -->
+            <div class="comment-box">
+                <img src="./Assets/Images/Icons/AvatarIcon.png" alt="Avatar Icon">
+                <div class="details">
+                    <header>
+                        <a href="#">
+                            <h4>Author Name</h4>
+                        </a>
+                        <h5>Date | Time</h5>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero fuga aliquid rem maiores aliquam nisi sint, consectetur libero ut obcaecati, asperiores animi ducimus ipsam ex? Eum, quo? Est, dignissimos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="comment-box">
+                <img src="./Assets/Images/Icons/AvatarIcon.png" alt="Avatar Icon">
+                <div class="details">
+                    <header>
+                        <a href="#">
+                            <h4>Author Name</h4>
+                        </a>
+                        <h5>Date | Time</h5>
+                    </header>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae vero fuga aliquid rem maiores aliquam nisi sint.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Comment Form -->
+            <form action="">
+                <h3>Write comment</h3>
+                <textarea name="" id="" cols="30" rows="5"></textarea>
+                <input type="submit" value="Comment">
+            </form>
 
         </div>
     </section>

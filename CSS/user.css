@@ -260,7 +260,7 @@ ul{
 }
 
 .profile .options .option-item{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 5px 0;
     display: flex;
     justify-content: flex-start;
@@ -282,6 +282,7 @@ ul{
     font-weight: lighter;
     font-size: 1.1rem;
     letter-spacing: .06em;
+    text-transform: uppercase;
 }
 
 .profile .options .option-item:hover{
