@@ -117,6 +117,18 @@ h1{
     position: relative;
 }
 
+.form .log{
+    color: #fff;
+}
+
+.form .warn{
+    color: yellow;
+}
+
+.form .error{
+    color: rgb(255, 50, 50);
+}
+
 .form input::placeholder{
     color: #bbb;
 }

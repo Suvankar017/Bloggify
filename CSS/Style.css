@@ -105,6 +105,21 @@ a{
     background: rgba(0, 0, 0, .2);
 }
 
+.main-nav .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+    cursor: pointer;
+}
+.main-nav .icon img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #fff;
+}
+
 /* Main -> Showcase */
 .showcase{
     height: 350px;
