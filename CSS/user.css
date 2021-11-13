@@ -34,7 +34,7 @@ ul{
     overflow: hidden;
 }
 
-.main img{
+.main .bg{
     display: block;
     width: 100%;
     height: 100%;
